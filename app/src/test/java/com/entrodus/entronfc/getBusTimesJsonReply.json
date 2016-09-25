@@ -1,0 +1,92 @@
+{
+  "busTimes": [
+    {
+      "operatorId": "LB",
+      "stopId": "36237356",
+      "stopName": "Pilrig Gardens",
+      "refService": "27",
+      "mnemoService": "11",
+      "nameService": "Hyvots Bank -- Ocean Terminal",
+      "timeDatas": [
+        {
+          "refDest": "1802241",
+          "nameDest": "Hyvots Bank",
+          "day": 0,
+          "time": "19:41",
+          "minutes": 2,
+          "equipment": "",
+          "vehicleStatus": "",
+          "reliability": "H",
+          "event": "",
+          "type": "N",
+          "terminus": "36235272",
+          "journeyId": "3671",
+          "busId": "377"
+        },
+        {
+          "refDest": "1802241",
+          "nameDest": "Hyvots Bank",
+          "day": 0,
+          "time": "19:57",
+          "minutes": 18,
+          "equipment": "",
+          "vehicleStatus": "",
+          "reliability": "H",
+          "event": "",
+          "type": "N",
+          "terminus": "36235272",
+          "journeyId": "3867",
+          "busId": "758"
+        }
+      ],
+      "globalDisruption": false,
+      "serviceDisruption": true,
+      "busStopDisruption": false,
+      "serviceDiversion": true
+    },
+    {
+      "operatorId": "LB",
+      "stopId": "36237356",
+      "stopName": "Pilrig Gardens",
+      "refService": "192",
+      "mnemoService": "N11",
+      "nameService": "Ocean Terminal - Hyvots Bank",
+      "timeDatas": [
+        {
+          "refDest": "12615680",
+          "nameDest": "Hyvots Bank",
+          "day": 0,
+          "time": "00:51",
+          "minutes": 312,
+          "equipment": "",
+          "vehicleStatus": "",
+          "reliability": "T",
+          "event": "",
+          "type": "N",
+          "terminus": "36235272",
+          "journeyId": "520",
+          "busId": "0"
+        },
+        {
+          "refDest": "12615680",
+          "nameDest": "Hyvots Bank",
+          "day": 0,
+          "time": "01:51",
+          "minutes": 372,
+          "equipment": "",
+          "vehicleStatus": "",
+          "reliability": "F",
+          "event": "",
+          "type": "N",
+          "terminus": "36235272",
+          "journeyId": "516",
+          "busId": "0"
+        }
+      ],
+      "globalDisruption": false,
+      "serviceDisruption": true,
+      "busStopDisruption": false,
+      "serviceDiversion": true
+    }
+  ]
+}
