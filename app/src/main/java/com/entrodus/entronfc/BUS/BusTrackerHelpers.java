@@ -12,12 +12,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 
-/**
- * Created by ntsok on 18/09/2016.
- */
 public final class BusTrackerHelpers {
 
-    public static final String md5(final String s) {
+    public static String md5(final String s) {
         final String MD5 = "MD5";
         try {
             // Create MD5 Hash
@@ -42,8 +39,7 @@ public final class BusTrackerHelpers {
         return "";
     }
 
-    public static final String GetHash(final Date date, final String key)
-    {
+    public static String GetHash(final Date date, final String key) {
         final SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHH");
         final String finalKey = key + df.format(date);
 
@@ -62,7 +58,7 @@ public final class BusTrackerHelpers {
         */
     }
 
-    public static final String extractBusTimesMessage(GetBusTimesReply busTimesReply) {
+    public static String extractBusTimesSchedule(GetBusTimesReply busTimesReply) {
         final StringBuilder builder = new StringBuilder();
 
         for (BusTime bustime : busTimesReply.busTimes) {

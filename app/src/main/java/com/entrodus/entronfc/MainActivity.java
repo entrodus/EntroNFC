@@ -11,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.entrodus.entronfc.BUS.BusTrackerService;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -77,5 +79,14 @@ public class MainActivity extends AppCompatActivity {
 
         Toast toast = Toast.makeText(context, msg, duration);
         toast.show();
+    }
+
+    public void btnTestOnClick(View v) {
+
+        String apiKey = "";
+        final BusTrackerService busTracker = new BusTrackerService(apiKey);
+        final String nextBusSchedule = busTracker.getNextBusSchedule();
+        showMessage(nextBusSchedule);
+
     }
 }

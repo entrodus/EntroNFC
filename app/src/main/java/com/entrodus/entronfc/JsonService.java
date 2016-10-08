@@ -3,9 +3,9 @@ package com.entrodus.entronfc;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- * Created by ntsok on 18/09/2016.
- */
+import java.io.IOException;
+
+
 public final class JsonService {
 
     public static String SerialiseToJson(Object object) {
@@ -18,4 +18,18 @@ public final class JsonService {
         }
         return json;
     }
+
+    public static <T> T DeserialiseFromJson(String json, Class<T> tclass){
+        final ObjectMapper mapper = new ObjectMapper();
+        final T reply;
+        try {
+            reply = mapper.readValue(json, tclass);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return reply;
+    }
+
+
 }

@@ -24,7 +24,7 @@ public class ExampleUnitTest {
     @Test
     public void testBusTrackerHelpers_extractBusTimesMessage() throws IOException {
         final GetBusTimesReply reply = retrieveDummyGetBusTimesReply();
-        final String busTimesMessage = BusTrackerHelpers.extractBusTimesMessage(reply);
+        final String busTimesMessage = BusTrackerHelpers.extractBusTimesSchedule(reply);
 
         assertTrue(busTimesMessage.length() > 0);
     }
